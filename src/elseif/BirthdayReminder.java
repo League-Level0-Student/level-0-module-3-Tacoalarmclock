@@ -20,8 +20,15 @@ public class BirthdayReminder {
 
 		JOptionPane.showConfirmDialog(null, "hello");
 		JOptionPane.showConfirmDialog(null, "message");
-		JOptionPane.showOptionDialog(null, "Hello", "HI", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
-				null, "me", "mom", "dad", null);
+
+		int choice = JOptionPane.showOptionDialog(null, //Component parentComponent
+                "Metric or Imperial?", //Object message,
+                "Choose an option", //String title
+                JOptionPane.YES_NO_OPTION, //int optionType
+                JOptionPane.INFORMATION_MESSAGE, //int messageType
+                null, //Icon icon,
+                ("Metric","Imperial"), //Object[] options,
+                "Metric");//Object initialValue 
 
 		// 3. Print out what the user typed
 
